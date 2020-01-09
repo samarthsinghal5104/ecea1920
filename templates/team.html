@@ -1,0 +1,377 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'styleteam.css' %}">
+{% endblock style %}
+{% block content %}
+<!-- {% for n in img %}
+<img src="{{ n.image.url }}" />
+{% endfor %} -->
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-6">
+			<h2>General Secretary</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<img src="{% static 'images/NEHA TANTWAY.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Neha Tantway</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-6">
+			<h2>Additional Secretary</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static 'images/Manthan Tolia.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Manthan Tolia</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Ankita Sarkar.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Ankita Sarkar</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/sukh ram choudhary.jpeg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Sukh Ram Choudhary</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/akshara parchuri.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Akshara Parchuri</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static 'images/Kalp Shobhana.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Kalp Shobhana</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Venkata Ratnam Anappindi.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Venkata Ratnam A</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Ashish Kumar.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Ashish Kumar</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-6">
+			<h2>Joint Secretary</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static 'images/Rallapalle Gayathri Chowdary.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div>Rallapalle Gayathri Chowdary</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Mohit Tripathi.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Mohit Tripathi</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/samarth.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Samarth Singhal (Developer)</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Vishav.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Vishav Kapahi</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static 'images/mukul verma.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div>Mukul Verma</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/harini.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div>Harini</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Srikaran Karnekanti.jpeg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>K.SriKaran</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/akshit chennuri.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-8">
+					<div>Akshit Chennuri</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static 'images/Sandesh.jpg' %}" class="img-thumbnail">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div>Sandesh Reddy</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-6">
+			<h2>Executive Member</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static 'images/Sowmya Reddy Sangem.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<span>Sowmya Reddy Sangem</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Biral Kumar Pradhan.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<span>Biral Kumar Pradhan</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Pratik Solav.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<span>Pratik Solav</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/sitanshu.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<span>Sitanshu Shukla</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static 'images/Ritika Paliwal.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<span>Ritika Paliwal</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/POOJITH MANIDEEP.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<span>Poojith Manideep</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/S V S SUDHEEP RAO.jpeg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<span>S V S SUDHEEP RAO</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Rahul Gattu.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+					<span>Rahul Gattu Nandakumar</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static 'images/Saketh Amargani.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+					<span>Saketh Kumar Amaragani</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Abitha Rao.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+					<span>Abitha Rao</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Philip Albert.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+					<span>Philip Albert</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Aniket Singh.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+					<span>Aniket Singh</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static 'images/Amarthya Sena.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+					<span>Amarthya Sena</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Tanvi Shekhar.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+					<span>Tanvi Shekhar</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/samir.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+					<span>Samir</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<img src="{% static 'images/Alay Patel.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+					<span>Alay Patel</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<img src="{% static 'images/prateek.jpg' %}" class="img-thumbnail" >
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10">
+					<span>Prateek Saxena</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

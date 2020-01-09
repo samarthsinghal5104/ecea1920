@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock %}
+{% block content %}
+<div id="slider-wrapper">
+	<!-- slider controls -->
+	<div class="slider-controlls">
+		<button class="next">></button>
+		<button class="prev"><</button>
+	</div>
+	<!-- slider items -->
+	<div class="slider-items">
+		<div class="slider-item">
+			<div class="content">
+				<!-- <h1>Title 1</h1> -->
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+				<img src="{% static 'images/nitw.jpg' %}">
+			</div>
+		</div>
+		<div class="slider-item">
+			<div class="content">
+				<!-- <h1>Title 2</h1> -->
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+				<img src="{% static 'images/nitw.jpg' %}">
+			</div>
+		</div>
+		<div class="slider-item">
+			<div class="content">
+				<!-- <h1>Title 3</h1> -->
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+				<img src="{% static 'images/eceadept.jpg' %}">
+			</div>
+		</div>
+	</div>
+	<!-- slider bullets -->  
+	<div class="slider-bullets">
+		<span class="bullet"></span>
+		<span class="bullet"></span>
+		<span class="bullet"></span>
+	</div>
+</div>
+<div class="box">
+	<div id="box_inside">
+		<div style="background-color:#223A5E;height: 40px;color: white;padding: 5px;font-size: 20px;text-align: center;border-top-left-radius: 20px;border-top-right-radius: 20px; ">
+			Notice Board
+		</div>
+		<div class="noticebrd">
+			<div class="content">
+				Inaugral Ceremony
+				<br>
+				<b>
+					Venue : ECE Seminar Hall
+					<br>
+					Date : 1st Aug,2019
+					<br>
+					Time : 04:30 PM
+				</b>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="box1">
+	<h1 id="box1_head">What is ECEA</h1>
+	<p>
+		The ECEA is a student body consisting of B.Tech. and M.Tech. students of ECE branch, guided by a faculty advisor. Our main aim is to provide quality content for the college, especially for the students of Electronics and Communication Engineering Department. We conduct various events and workshops, both technical and non-technical. We are always ready to learn new things and stay updated with latest technology in order to make people of the department and also of the entire college aware of them.
+	</p>
+	<h3>VISION OF THE DEPARTMENT:</h3>
+	<p>
+		Through its faculty, Department of ECE is a driving force.
+	</p>
+	<ul>
+		<li>
+			Create
+			an
+			educational
+			and
+			friendly
+			environment to prepare students to meet the
+			challenges
+			of
+			modern
+			Electronics
+			and
+			Communication Engineering industry from the
+			experiences of faculties and seniors in
+			technical knowledge and innovative
+			approaches. Also to build unity and the sense
+			of teamwork among its members.
+		</li>
+	</ul>
+	<h3>MISSION OF THE DEPARTMENT: </h3>
+	<ul>
+		<li>
+			To create learning, development and testing
+			environment to meet ever challenging needs of the
+			Electronics Industry.
+		</li>
+		<li>
+			To create Leadership qualities and Industry interaction for
+			student benefits.
+		</li>
+		<li>
+			Allowing Students to share reservoir of experience in
+			education and co-curricular activities and to work in
+			dynamic teams.
+		</li>
+		<li>
+			To invoke the social responsibility of each individual
+			through social involvement activities.
+		</li>
+	</ul>
+</div>
+<br>
+
+{% endblock content %}
+{% block script %}
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}
+

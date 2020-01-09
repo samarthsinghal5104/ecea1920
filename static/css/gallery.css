@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Hind');
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+  background: #EFEFEF;
+  color: #333;
+}
+
+h1 a {
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+a {
+  color: #777;
+}
+
+a:hover {
+  color: #777;
+}
+
+#imgprop{
+  display: block;
+  width: 100%; 
+  /*border: 6px solid #7AD543;*/
+}
+
+section {
+  margin: 2rem 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 2rem 3rem;
+  border-bottom: 1px solid #BBB;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0 0 0 15px;
+  text-transform: uppercase;
+}
+
+#h3prop{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 2rem 0 0 0;
+  line-height: 0.5;
+}
+
+.responsive ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem; 
+}
+
+.responsive2 ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem; 
+}
+
+#ulprop {
+  list-style: none;
+  margin: 0rem;
+  padding: 1rem;
+
+}
+
+#liprop{
+  background: #FFF;
+  padding: 1rem;
+}
+
+@media (max-width: 550px) {
+  h1, h2 {
+    font-size: 2rem;
+  }
+}

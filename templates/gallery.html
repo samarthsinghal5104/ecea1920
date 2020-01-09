@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/gallery.css' %}"> -->
+<link rel="stylesheet" type="text/css" href="{% static 'styleteam.css' %}">
+{% endblock style %}
+{% block content %}
+<h1>Image Gallery</h1>
+<!-- <h1>@SaraiRRivera</a></h1> -->
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="{% static 'gallery/1.jpg' %}" class="img-thumbnail" >
+		</div>
+		<div class="col-sm-4">
+			<img src="{% static 'gallery/2.jpg' %}" class="img-thumbnail" >
+		</div>
+		<div class="col-sm-4">
+			<img src="{% static 'gallery/3.jpg' %}" class="img-thumbnail" >
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="{% static 'gallery/4.jpg' %}" class="img-thumbnail" >
+		</div>
+		<div class="col-sm-4">
+			<img src="{% static 'gallery/electronova1.jpg' %}" class="img-thumbnail" >
+		</div>
+		<div class="col-sm-4">
+			<img src="{% static 'gallery/6.jpg' %}" class="img-thumbnail" >
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="{% static 'gallery/7.jpg' %}" class="img-thumbnail" >
+		</div>
+		<div class="col-sm-4">
+			<img src="{% static 'gallery/8.jpg' %}" class="img-thumbnail" >
+		</div>
+		<div class="col-sm-4">
+			<img src="{% static 'gallery/9.jpg' %}" class="img-thumbnail" >
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-4">
+			<img id="imgprop" src="{% static 'gallery/ALP_1.jpg' %}" class="img-thumbnail">
+		</div>
+		<div class="col-sm-4">
+			<img id="imgprop" src="{% static 'gallery/ALP_2.jpg' %}" class="img-thumbnail">
+		</div>
+		<div class="col-sm-4">
+			<img id="imgprop" src="{% static 'gallery/5.jpg' %}" class="img-thumbnail">
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-4">
+			<img id="imgprop" src="{% static 'gallery/electronova2.jpg' %}" class="img-thumbnail">
+		</div>
+		<div class="col-sm-4">
+			<img id="imgprop" src="{% static 'gallery/gre2.jpg' %}" class="img-thumbnail">
+		</div>
+		<div class="col-sm-4">
+			<img id="imgprop" src="{% static 'gallery/gre1.jpg' %}" class="img-thumbnail">
+		</div>
+	</div>
+	<br>
+
+</div>
+
+{% endblock content %}

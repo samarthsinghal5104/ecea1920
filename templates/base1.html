@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+	<!-- <link rel="stylesheet" type="text/css" href="{% static 'loader.css' %}"> -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="{% static 'academic.css' %}"> -->
+	{% block stylesheet %}{% endblock %}
+	{% if title %}
+	<title>ECEA-{{ title }}</title>
+	{% else %}
+	<title>ECEA</title>
+	{% endif %}
+</head>
+<body >
+
+	
+	<!-- <div class="loader-wrapper">
+		<span class="loader"><span class="loader-inner"></span></span>
+	</div>
+
+	<script>
+		$(window).on("load",function(){
+			$(".loader-wrapper").fadeOut("slow");
+		});
+	</script> -->
+	<header class="site-header " color="blue">
+		<nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+			<div class="container">
+				<a class="navbar-brand mr-4" href="{% url 'home' %}">ECE-Association</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarToggle">
+					<div class="navbar-nav mr-auto">
+						<!-- <a class="nav-item nav-link" href="#">Home</a> -->
+						<a class="nav-item nav-link" href="{% url 'team' %}">Team</a>
+					</div>
+					<div class="navbar-nav">
+						<a class="nav-item nav-link" href="{% url 'experience' %}">Experiences</a>
+						<a class="nav-item nav-link" href="{% url 'calender' %}">Calender</a>
+						<a class="nav-item nav-link" href="{% url 'component' %}">Components</a>
+						<a class="nav-item nav-link" href="{% url 'academics' %}">Academics</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Dropdown
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<!-- <div class="dropdown-divider"></div> -->
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<a class="nav-item nav-link" href="{% url 'preparation' %}">Preparations</a>
+						<a class="nav-item nav-link" href="{% url 'event' %}">Events</a>
+						<a class="nav-item nav-link" href="{% url 'gallery' %}">Gallery</a>
+						<a class="nav-item nav-link" href="{% url 'alumni' %}">Alumni</a>
+						<a class="nav-item nav-link" href="{% url 'project' %}">Projects</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	
+
+
+	<div class="container">
+		{% block content %}{% endblock %}
+	</div>
+
+	
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>\
+	{% block script %}{% endblock %}
+
+</body>
+<!-- <div class="social">
+  <a href="https://www.facebook.com/ECEANITW/"><img src="{% static 'blog/facebook_logo.svg' %}" alt="facebook"></a>
+  <a href="https://www.instagram.com/nitw.ecea/"><img src="{% static 'blog/instagram_logo.svg' %}" alt="facebook"></a>
+
+</div> -->
+</html>
